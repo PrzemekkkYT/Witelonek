@@ -1,0 +1,8 @@
+[2025-01-09 21:04:13] [INFO    ] discord.client: logging in using static token
+[2025-01-09 21:04:48] [INFO    ] discord.client: logging in using static token
+[2025-01-09 21:04:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 54b48185d820a191e6363be94e185b02).
+[2025-01-09 21:04:51] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 21:10:48] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+[2025-01-09 21:19:18] [INFO    ] discord.client: logging in using static token
+[2025-01-09 21:19:20] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3c8d8454ce4edd4f30fab162047ce8f6).
+[2025-01-09 21:19:22] [INFO    ] discord: ========== bot is ready ==========
