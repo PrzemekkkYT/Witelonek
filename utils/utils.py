@@ -10,8 +10,6 @@ from discord.app_commands import locale_str, TranslationContextTypes, Translator
 from discord.app_commands.translator import OtherTranslationContext
 from discord.enums import Locale
 
-from utils.translated_utils import FG_Embed
-
 logger = logging.getLogger(__name__)
 
 
@@ -21,9 +19,9 @@ class JSONTranslator(Translator):
         self.translations = None
 
     async def load(self) -> None:
-        print("load translation")
         with open(self.translations_path, "r", encoding="utf-8") as f:
             self.translations = json.load(f)
+        print("translations loaded")
 
     async def unload(self) -> None:
         self.translations = None
@@ -34,6 +32,14 @@ class JSONTranslator(Translator):
         locale: Locale = Locale.polish,
         context: Optional[TranslationContextTypes] = OtherTranslationContext,
     ) -> Optional[str]:
+        return self.translate_sync(string, locale, context)
+
+    def translate_sync(
+        self,
+        string: locale_str,
+        locale: Locale = Locale.polish,
+        context: Optional[TranslationContextTypes] = OtherTranslationContext,
+    ):
         if self.translations is None:
             return str(string)
 
@@ -45,7 +51,7 @@ class JSONTranslator(Translator):
 
         ret_string = self.translations[str(locale)][str(string)]
         for arg, val in string.extras.items():
-            ret_string = ret_string.replace(f"{{{arg}}}", val)
+            ret_string = ret_string.replace(f"{{{arg}}}", str(val))
 
         return ret_string
 

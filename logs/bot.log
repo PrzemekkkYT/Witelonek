@@ -6,3 +6,1905 @@
 [2025-01-09 21:19:18] [INFO    ] discord.client: logging in using static token
 [2025-01-09 21:19:20] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3c8d8454ce4edd4f30fab162047ce8f6).
 [2025-01-09 21:19:22] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 21:49:51] [INFO    ] discord.client: logging in using static token
+[2025-01-09 21:49:52] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 46da4b1e4bc61dba9e6e83070aec8a45).
+[2025-01-09 21:49:54] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 21:50:36] [INFO    ] discord.client: logging in using static token
+[2025-01-09 21:50:38] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 462a6d85442ffed2046e794b369db23c).
+[2025-01-09 21:50:40] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:00:30] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:00:48] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:00:50] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f5482de8c3de038af959e47f8bcd8147).
+[2025-01-09 22:00:52] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:01:00] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "showcalendar" is not found
+[2025-01-09 22:01:09] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "showcalendartwo" is not found
+[2025-01-09 22:01:26] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command showcalendertwo
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "E:\DiscordBot\Witelonek\extensions\Calendar.py", line 36, in showcalendertwo
+    embed=BetterEmbed(
+TypeError: BetterEmbed.__init__() missing 1 required keyword-only argument: 'translator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: BetterEmbed.__init__() missing 1 required keyword-only argument: 'translator'
+[2025-01-09 22:02:11] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:02:15] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:03:12] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b0045d0ec6c5795f73654f497f5cf907).
+[2025-01-09 22:03:14] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:03:45] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command showcalendartwo
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "E:\DiscordBot\Witelonek\extensions\Calendar.py", line 39, in showcalendartwo
+    translator=self.client.translator,
+AttributeError: 'MyClient' object has no attribute 'translator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'MyClient' object has no attribute 'translator'
+[2025-01-09 22:04:28] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:04:29] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e9d4c1fec0e940b5a005048323db1188).
+[2025-01-09 22:04:31] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:04:38] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command showcalendartwo
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "E:\DiscordBot\Witelonek\extensions\Calendar.py", line 40, in showcalendartwo
+    locale=ctx.author.locale,
+AttributeError: 'Member' object has no attribute 'locale'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Member' object has no attribute 'locale'
+[2025-01-09 22:05:13] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:05:14] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 414bebc919218e63df6669b252aff2f0).
+[2025-01-09 22:05:16] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:05:37] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:06:15] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7f7e7ea672f8c17ab7f15d1d2817fa58).
+[2025-01-09 22:06:17] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:07:14] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:07:15] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 14812ab1ef5bd561a1372db484f6d8dd).
+[2025-01-09 22:07:17] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:12:33] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:12:34] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 1cab7997b8b9b0b934c1da7217abd8c5).
+[2025-01-09 22:12:36] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:22:28] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:22:29] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ba20001f3a70b2a41bc0248a70d7eb85).
+[2025-01-09 22:22:31] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:22:35] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command showcalendartwo
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "E:\DiscordBot\Witelonek\extensions\Calendar.py", line 47, in showcalendartwo
+    await ctx.send(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields.0.value: Must be 1024 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields.0.value: Must be 1024 or fewer in length.
+[2025-01-09 22:22:53] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:23:29] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b4643a1228265747cd54643ce74ca2ae).
+[2025-01-09 22:23:31] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:24:34] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command showcalendartwo
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "E:\DiscordBot\Witelonek\extensions\Calendar.py", line 48, in showcalendartwo
+    await ctx.send(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields.0.value: Must be 1024 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields.0.value: Must be 1024 or fewer in length.
+[2025-01-09 22:24:54] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:24:55] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9aac0d04a40a97547e82b8bb6c234159).
+[2025-01-09 22:24:57] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:24:59] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command showcalendartwo
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "E:\DiscordBot\Witelonek\extensions\Calendar.py", line 48, in showcalendartwo
+    await ctx.send(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields.0.value: Must be 1024 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields.0.value: Must be 1024 or fewer in length.
+[2025-01-09 22:25:19] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:25:55] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d13c63002683d6a2ee668763c6ca7427).
+[2025-01-09 22:25:57] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:29:25] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:29:26] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: aa7e4a36de8990983d90300164a6ba0f).
+[2025-01-09 22:29:28] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:30:07] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:30:09] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7e5481df375e61ad2c24f4baecfec33f).
+[2025-01-09 22:30:11] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:31:02] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:31:05] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e5bb11abbeb384bfe7b655725eb87e38).
+[2025-01-09 22:31:07] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:31:35] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:31:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: df0928abb32b71c9314e10648f9166a0).
+[2025-01-09 22:31:38] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-09 22:33:12] [INFO    ] discord.client: logging in using static token
+[2025-01-09 22:33:14] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: a1fdac7a8c6e43b66021b72bd9ebcab7).
+[2025-01-09 22:33:16] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-11 22:18:00] [INFO    ] discord.client: logging in using static token
+[2025-01-11 22:18:01] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: a8789a886cbbbaae24ab2eec03ab2fa9).
+[2025-01-11 22:18:03] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-11 23:47:46] [INFO    ] discord.client: logging in using static token
+[2025-01-11 23:48:15] [INFO    ] discord.client: logging in using static token
+[2025-01-11 23:48:49] [INFO    ] discord.client: logging in using static token
+[2025-01-11 23:52:38] [INFO    ] discord.client: logging in using static token
+[2025-01-11 23:52:52] [INFO    ] discord.client: logging in using static token
+[2025-01-11 23:54:56] [INFO    ] discord.client: logging in using static token
+[2025-01-12 00:18:50] [INFO    ] discord.client: logging in using static token
+[2025-01-12 00:18:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 55c8006f74843d49061c6903b01c399a).
+[2025-01-12 00:18:53] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 00:21:24] [INFO    ] discord.client: logging in using static token
+[2025-01-12 00:30:35] [INFO    ] discord.client: logging in using static token
+[2025-01-12 00:30:52] [INFO    ] discord.client: logging in using static token
+[2025-01-12 00:31:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 72b25d488baea597dde3c1f2eebe705a).
+[2025-01-12 00:31:38] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 00:42:42] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_add'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 74, in add
+    embed=BetterEmbed(
+TypeError: BetterEmbed.__init__() missing 1 required keyword-only argument: 'translator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 85, in add
+    embed=BetterEmbed(
+TypeError: BetterEmbed.__init__() missing 1 required keyword-only argument: 'translator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_add' raised an exception: TypeError: BetterEmbed.__init__() missing 1 required keyword-only argument: 'translator'
+[2025-01-12 00:44:35] [INFO    ] discord.client: logging in using static token
+[2025-01-12 00:44:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: eb5dd26066b42797ee38a436f4f6bf11).
+[2025-01-12 00:44:38] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 00:44:52] [INFO    ] discord.client: logging in using static token
+[2025-01-12 00:45:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c8665949db0bb4fb6e54cd098463f836).
+[2025-01-12 00:45:38] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 01:06:20] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_add'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 61, in add
+    formatted_date = datetime.strptime(date, "%d.%m.%Y")
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '12-13-2023' does not match format '%d-%m-%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 87, in add
+    embed=BetterEmbed(
+  File "E:\DiscordBot\Witelonek\utils\translated_utils.py", line 53, in __init__
+    title=self.str_translate(title),
+  File "E:\DiscordBot\Witelonek\utils\translated_utils.py", line 84, in str_translate
+    msg = self.translator.translations[
+KeyError: 'en-US'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_add' raised an exception: KeyError: 'en-US'
+[2025-01-12 01:11:13] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:11:14] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 0658f1e92d78b79517f09f1d0a59ad3f).
+[2025-01-12 01:11:16] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 01:14:34] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:14:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e4fb45f215076140e9dfca109d2e1ebd).
+[2025-01-12 01:14:38] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 01:15:03] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:15:35] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9ee6f4e2e9e0f15b756c23ef3867cb7f).
+[2025-01-12 01:15:37] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 01:24:03] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:24:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: dec6876638b1aa777bc5c225bdec06f6).
+[2025-01-12 01:24:06] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 01:25:02] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_add'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 61, in add
+    formatted_date = datetime.strptime(date, "%d.%m.%Y")
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '12-32-2222' does not match format '%d-%m-%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 101, in add
+    await interaction.response.send_message(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 151, in request
+    to_send = utils._to_json(payload)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\utils.py", line 650, in _to_json
+    return json.dumps(obj, separators=(',', ':'), ensure_ascii=True)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type coroutine is not JSON serializable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_add' raised an exception: TypeError: Object of type coroutine is not JSON serializable
+[2025-01-12 01:25:19] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:25:20] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 91c8451ccd029586651d2dd7aad484a0).
+[2025-01-12 01:25:22] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 01:39:53] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:39:56] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:40:13] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:40:14] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6b0b7bbbd056b4594989725fff059e4e).
+[2025-01-12 01:40:16] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 01:41:36] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_add'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 75, in add
+    formatted_time = datetime.strptime(time, "%H:%M")
+TypeError: strptime() argument 1 must be str, not None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 125, in add
+    await interaction.response.send_message(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 774, in send_message
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_add' raised an exception: InteractionResponded: This interaction has already been responded to before
+[2025-01-12 01:41:57] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_add'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 94, in add
+    time=formatted_time,
+UnboundLocalError: local variable 'formatted_time' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 125, in add
+    await interaction.response.send_message(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 774, in send_message
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_add' raised an exception: InteractionResponded: This interaction has already been responded to before
+[2025-01-12 01:58:46] [INFO    ] discord.client: logging in using static token
+[2025-01-12 01:58:47] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ef34d84a20c9b48fca1f0ed9c6e499b5).
+[2025-01-12 01:58:49] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:10:23] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:10:55] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:10:56] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: df37023e06d923233835ccc4b0277f7a).
+[2025-01-12 02:10:58] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:15:06] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:15:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 526e19abd28bd73a84d7f47e0684e40a).
+[2025-01-12 02:15:09] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:16:34] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:16:37] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: cc84a4325a26391d72f4fb58b947080a).
+[2025-01-12 02:16:39] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:17:09] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:17:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 64ea2598a9205b9449383153aebe8bba).
+[2025-01-12 02:17:12] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:21:56] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:21:57] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c9953ac48439c4da683ed8887785386c).
+[2025-01-12 02:21:59] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:23:11] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:23:12] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 138193f7cfe7a730dc8fb2f86fc492f2).
+[2025-01-12 02:23:14] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:40:32] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:44:14] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:44:15] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d9118b04429af07c6965658cea2fbc50).
+[2025-01-12 02:44:17] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:44:44] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 203, in show_day
+    name += f"\n*{self.client.tree.translator(locale_str(f'calendar_add_type_{event.event_type}'))}*"
+TypeError: 'JSONTranslator' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: TypeError: 'JSONTranslator' object is not callable
+[2025-01-12 02:45:04] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:45:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d8ecc1e12b9becb295d29de5225d93c5).
+[2025-01-12 02:45:08] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:45:09] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 205, in show_day
+    value = event.role or ""
+AttributeError: 'Event' object has no attribute 'role'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: AttributeError: 'Event' object has no attribute 'role'
+[2025-01-12 02:45:40] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:45:41] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 8ea0a876fad75117845328c7545aec25).
+[2025-01-12 02:45:43] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:45:45] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 205, in show_day
+    value = event.role or ""
+AttributeError: 'Event' object has no attribute 'role'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: AttributeError: 'Event' object has no attribute 'role'
+[2025-01-12 02:46:11] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:46:12] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 85ebef9cda865e57f34e3a0154fbdf9b).
+[2025-01-12 02:46:14] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:46:17] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 207, in show_day
+    value += f"\n{event.message}"
+TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: TypeError: unsupported operand type(s) for +=: 'int' and 'str'
+[2025-01-12 02:46:48] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:46:50] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f7ebb06218ae148c1b9d5f4140652b6b).
+[2025-01-12 02:46:52] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:46:54] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 211, in show_day
+    embed = BetterEmbed(
+  File "E:\DiscordBot\Witelonek\utils\translated_utils.py", line 53, in __init__
+    title=self.str_translate(title),
+  File "E:\DiscordBot\Witelonek\utils\translated_utils.py", line 84, in str_translate
+    msg = self.translator.translations[
+KeyError: 'calendar_show_day_title'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: KeyError: 'calendar_show_day_title'
+[2025-01-12 02:48:12] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:48:13] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 885675ab12c7d3847ae4f9f766eb2eb5).
+[2025-01-12 02:48:15] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 02:50:29] [INFO    ] discord.client: logging in using static token
+[2025-01-12 02:50:31] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 4b9a5ffca8a62a4a63bfa98819c37fcd).
+[2025-01-12 02:50:33] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 15:41:37] [INFO    ] discord.client: logging in using static token
+[2025-01-12 15:45:39] [INFO    ] discord.client: logging in using static token
+[2025-01-12 15:45:59] [INFO    ] discord.client: logging in using static token
+[2025-01-12 15:46:00] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ac7680e59a9239486382db2dca275dca).
+[2025-01-12 15:46:02] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 15:59:49] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 201, in show_day
+    await day._init(event)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 313, in _init
+    self.value += await self.translator.translate(
+  File "E:\DiscordBot\Witelonek\utils\utils.py", line 46, in translate
+    ret_string = ret_string.replace(f"{{{arg}}}", val)
+TypeError: replace() argument 2 must be str, not int
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: TypeError: replace() argument 2 must be str, not int
+[2025-01-12 16:00:16] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:00:18] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 33a6d47abcfe6f114358aecc6394b2f9).
+[2025-01-12 16:00:20] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:00:22] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 201, in show_day
+    await day._init(event)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 320, in _init
+    super().__init__(title=self.name, value=self.value, inline=False)
+TypeError: BetterEmbed.Field.__init__() got an unexpected keyword argument 'title'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: TypeError: BetterEmbed.Field.__init__() got an unexpected keyword argument 'title'
+[2025-01-12 16:01:54] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:01:55] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 93752fa033d6005585ee43427f35dedb).
+[2025-01-12 16:01:57] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:05:00] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 201, in show_day
+    await day._init(event)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 311, in _init
+    self.value += "*" + event.event_type + "*" + "\n" or ""
+TypeError: can only concatenate str (not "NoneType") to str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: TypeError: can only concatenate str (not "NoneType") to str
+[2025-01-12 16:06:22] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:06:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 22bccd71cfaa842df54b958d564ae6d5).
+[2025-01-12 16:06:25] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:16:40] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:16:41] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 987a849c290f782b7119a72819145294).
+[2025-01-12 16:16:43] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:17:35] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:17:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9ee0f3b9f19427ebe0fe4093aeaeed85).
+[2025-01-12 16:17:38] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:18:56] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 253, in show_week
+    locale=discord.Locale.polish,
+  File "E:\DiscordBot\Witelonek\utils\utils.py", line 46, in translate
+    ret_string = ret_string.replace(f"{{{arg}}}", val)
+TypeError: replace() argument 2 must be str, not int
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: replace() argument 2 must be str, not int
+[2025-01-12 16:20:21] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:20:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: fedec5bf7b9c3b91d6eeb6296001fac1).
+[2025-01-12 16:20:24] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:20:27] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 254, in show_week
+    title=await self.client.tree.translator.translate(
+  File "E:\DiscordBot\Witelonek\utils\utils.py", line 46, in translate
+    ret_string = ret_string.replace(f"{{{str(arg)}}}", val)
+TypeError: replace() argument 2 must be str, not int
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: replace() argument 2 must be str, not int
+[2025-01-12 16:20:54] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:20:55] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 452d44fc115a753e374787df75d65c2c).
+[2025-01-12 16:20:57] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:21:06] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 257, in show_week
+    fields=[
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 258, in <listcomp>
+    WeekDay(
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 324, in __init__
+    [f"{event.time.strftime('%H:%M')} - {event.title}" for event in events]
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 324, in <listcomp>
+    [f"{event.time.strftime('%H:%M')} - {event.title}" for event in events]
+AttributeError: 'NoneType' object has no attribute 'strftime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: AttributeError: 'NoneType' object has no attribute 'strftime'
+[2025-01-12 16:21:49] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 242, in show_week
+    start_of_week = datetime.fromisocalendar(datetime.now().year, week, 1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: 'NoneType' object cannot be interpreted as an integer
+[2025-01-12 16:22:29] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:22:30] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ab863803345266064547ab869e3c409c).
+[2025-01-12 16:22:32] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:22:36] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 257, in show_week
+    fields=[
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 258, in <listcomp>
+    WeekDay(
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 334, in __init__
+    super().__init__(title=self.name, value=self.value, inline=False)
+TypeError: BetterEmbed.Field.__init__() got an unexpected keyword argument 'title'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: BetterEmbed.Field.__init__() got an unexpected keyword argument 'title'
+[2025-01-12 16:22:50] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:23:31] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 38d6d952dd60c30083475dcb5df094d7).
+[2025-01-12 16:23:33] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:28:30] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:28:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 96525e103f19cd662689c2665ffde442).
+[2025-01-12 16:28:34] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:28:48] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:29:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e4c760dbbfe5656aeec01187281ad970).
+[2025-01-12 16:29:34] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:31:16] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:31:18] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 57d857a242193963e5d24887444490d2).
+[2025-01-12 16:31:20] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:42:00] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:42:02] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 793256fc1a850f06f2e7184d81a8e635).
+[2025-01-12 16:42:04] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:47:54] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:47:55] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 73f72c8d76d32ddd84def87aaa7a2657).
+[2025-01-12 16:47:57] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 16:49:39] [INFO    ] discord.client: logging in using static token
+[2025-01-12 16:49:40] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: dc65a466ab4363e2c1115df507e55c25).
+[2025-01-12 16:49:42] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 17:54:49] [INFO    ] discord.client: logging in using static token
+[2025-01-12 17:54:50] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: bdcee2ceec653b0cca7c0faabfc6f367).
+[2025-01-12 17:54:52] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 17:55:05] [INFO    ] discord.client: logging in using static token
+[2025-01-12 17:55:50] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 34eb225dc0c5083041f81d14fa4fae9f).
+[2025-01-12 17:55:52] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 18:00:15] [INFO    ] discord.client: logging in using static token
+[2025-01-12 18:00:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 84eb81f80fec660cd051031e1414e7d7).
+[2025-01-12 18:00:19] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 18:00:22] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 195, in show_day
+    formatted_date = datetime.strptime(date, "%d.%m.%Y")
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '12' does not match format '%d-%m-%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 227, in show_day
+    embed=BetterEmbed(
+  File "E:\DiscordBot\Witelonek\utils\translated_utils.py", line 53, in __init__
+    title=self.str_translate(title),
+  File "E:\DiscordBot\Witelonek\utils\translated_utils.py", line 84, in str_translate
+    msg = self.translator.translations[
+KeyError: 'calendar_show_day_failure_title'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: KeyError: 'calendar_show_day_failure_title'
+[2025-01-12 18:04:31] [INFO    ] discord.client: logging in using static token
+[2025-01-12 18:04:33] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 011d13b9d0c48728bf327cd46e541de0).
+[2025-01-12 18:04:35] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 18:29:21] [INFO    ] discord.client: logging in using static token
+[2025-01-12 18:29:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b0ca1eef4bbe39151441a6cb10025e09).
+[2025-01-12 18:29:24] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 18:29:49] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 266, in show_week
+    start_of_week = datetime.fromisocalendar(datetime.now().year, week, 1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: 'NoneType' object cannot be interpreted as an integer
+[2025-01-12 18:30:12] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 280, in show_week
+    print(ev.date + ev.time)
+TypeError: unsupported operand type(s) for +: 'datetime.date' and 'NoneType'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'datetime.date' and 'NoneType'
+[2025-01-12 18:31:06] [INFO    ] discord.client: logging in using static token
+[2025-01-12 18:31:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: efa5fd5c68e05d6e0f48a16274f8c4e8).
+[2025-01-12 18:31:09] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 18:31:12] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 285, in show_week
+    fields=[
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 286, in <listcomp>
+    WeekDay(
+TypeError: WeekDay.__init__() got an unexpected keyword argument 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: WeekDay.__init__() got an unexpected keyword argument 'date'
+[2025-01-12 18:33:52] [INFO    ] discord.client: logging in using static token
+[2025-01-12 18:33:54] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 39508ee7d705505c660a52369a2c4585).
+[2025-01-12 18:33:56] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 18:34:25] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 281, in show_week
+    await weekDay._init(event.date, events.where(Event.date == event.date))
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 365, in _init
+    datetime_to_words(
+TypeError: unsupported operand type(s) for +: 'coroutine' and 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'coroutine' and 'str'
+[2025-01-12 18:34:50] [INFO    ] discord.client: logging in using static token
+[2025-01-12 18:34:52] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d560c7f90958a64de73b082c38c43dbc).
+[2025-01-12 18:34:54] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 18:35:00] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 285, in show_week
+    embed=BetterEmbed(
+  File "E:\DiscordBot\Witelonek\utils\translated_utils.py", line 60, in __init__
+    for field in fields:
+TypeError: 'int' object is not iterable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: 'int' object is not iterable
+[2025-01-12 18:35:48] [INFO    ] discord.client: logging in using static token
+[2025-01-12 18:35:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 73fbf68bd2c8e3aed099e83e0fda3dc4).
+[2025-01-12 18:35:51] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:02:34] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:02:35] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7a0a956f48cb112a345a62c62843aee9).
+[2025-01-12 19:02:37] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:02:49] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_add'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 105, in add
+    time=formatted_time,
+UnboundLocalError: local variable 'formatted_time' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 126, in add
+    embed = embedGenerator.embed(
+TypeError: EmbedGenerator.embed() got an unexpected keyword argument 'translator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_add' raised an exception: TypeError: EmbedGenerator.embed() got an unexpected keyword argument 'translator'
+[2025-01-12 19:10:05] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:10:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 53d73eca5e40f145859f1ff7d9eb2b23).
+[2025-01-12 19:10:09] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:10:13] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_add'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 92, in add
+    raise ValueError(error_desc)
+ValueError: calendar_add_failure_invaliddate
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 121, in add
+    embed = embedGenerator.embed(
+TypeError: EmbedGenerator.embed() got an unexpected keyword argument 'translator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_add' raised an exception: TypeError: EmbedGenerator.embed() got an unexpected keyword argument 'translator'
+[2025-01-12 19:11:22] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:11:24] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6f25cc73e45c95ef52d8aaabc830b841).
+[2025-01-12 19:11:26] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:35:29] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:36:43] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:36:46] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5b75d4112347dec2d74e04067fcb8dca).
+[2025-01-12 19:36:48] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:39:34] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 283, in show_week
+    end_of_week = start_of_week + timedelta(days=6)
+TypeError: unsupported operand type(s) for +: 'int' and 'datetime.timedelta'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'int' and 'datetime.timedelta'
+[2025-01-12 19:40:57] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:40:59] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: fc7b10617d45ee7ca2213d3dc89f2042).
+[2025-01-12 19:41:01] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:42:19] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 303, in show_week
+    locale_str("calendar_show_week_title", week=week)
+UnboundLocalError: local variable 'week' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: UnboundLocalError: local variable 'week' referenced before assignment
+[2025-01-12 19:42:56] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:42:57] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 2955e6b7c91971108fd2aed47945e880).
+[2025-01-12 19:42:59] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:57:49] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:57:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 09d640c45d500cc52c3e86439a085e3a).
+[2025-01-12 19:57:53] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 19:58:52] [INFO    ] discord.client: logging in using static token
+[2025-01-12 19:58:53] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f69f952b6777784389a91ed2a7f5080c).
+[2025-01-12 19:58:55] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:00:22] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:00:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f4bad61f9a2eb474920640535345ac52).
+[2025-01-12 20:00:25] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:08:20] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:08:21] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 470cec23b035d7db2efbe3b1452cfd71).
+[2025-01-12 20:08:23] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:10:48] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:10:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 023ec490d7f3ff574b3e52ca8b9bb9dd).
+[2025-01-12 20:10:51] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:11:19] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:11:20] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e81a85803cf010397f9e60425d40416c).
+[2025-01-12 20:11:23] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:17:41] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:17:42] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 2913498b48d050b79c49623c1d39a28f).
+[2025-01-12 20:17:44] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:17:50] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 208, in show_day
+    await tempEvent._init(event)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 352, in _init
+    else f" <t:{int(datetime.timestamp(event.date))}:D>"
+TypeError: descriptor 'timestamp' for 'datetime.datetime' objects doesn't apply to a 'datetime.date' object
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: TypeError: descriptor 'timestamp' for 'datetime.datetime' objects doesn't apply to a 'datetime.date' object
+[2025-01-12 20:18:27] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:18:28] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9cb644d3942fedf6049ac449184ebc21).
+[2025-01-12 20:18:30] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:18:34] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 208, in show_day
+    await tempEvent._init(event)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 352, in _init
+    else f" <t:{int(event.date.to_timestamp())}:D>"
+AttributeError: 'datetime.date' object has no attribute 'to_timestamp'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: AttributeError: 'datetime.date' object has no attribute 'to_timestamp'
+[2025-01-12 20:20:14] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:20:15] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c722b3a011279fd5a3b0912646519a7e).
+[2025-01-12 20:20:17] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:20:50] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:20:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7e191310dabfaf4354c301920ee222fb).
+[2025-01-12 20:20:53] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:20:56] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 208, in show_day
+    await tempEvent._init(event)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 352, in _init
+    else f" <t:{int(datetime.timestamp(datetime.combine(event.date, datetime(hour=12))))}:D>"
+TypeError: function missing required argument 'year' (pos 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: TypeError: function missing required argument 'year' (pos 1)
+[2025-01-12 20:21:48] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:21:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9e5a1e6beb33eb2c496e4e50d25d758f).
+[2025-01-12 20:21:51] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:22:07] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:22:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e4464eabcdea192e35333a4912580c51).
+[2025-01-12 20:22:51] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:24:32] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:24:34] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 82c658eeb01a053b61b60b8fe8746551).
+[2025-01-12 20:24:36] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:33:14] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:33:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7da563ef726f4030a7bc9ec6eeb44160).
+[2025-01-12 20:33:18] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:34:16] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:34:18] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 44e2aa17c1f7a2da318a2cd58ea9e25d).
+[2025-01-12 20:34:20] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:37:39] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:37:41] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5ad762be2c19e8acf30a9c232c1cc669).
+[2025-01-12 20:37:43] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:37:44] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_day'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 208, in show_day
+    await tempEvent._init(event)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 369, in _init
+    else f"   📄 {await self.translator.translate('calendar_add_type_other')}"
+  File "E:\DiscordBot\Witelonek\utils\utils.py", line 35, in translate
+    return self.translate_sync(string, locale, context)
+  File "E:\DiscordBot\Witelonek\utils\utils.py", line 53, in translate_sync
+    for arg, val in string.extras.items():
+AttributeError: 'str' object has no attribute 'extras'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_day' raised an exception: AttributeError: 'str' object has no attribute 'extras'
+[2025-01-12 20:38:13] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:38:14] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: bb7ef0491b92f617b8590bbdb1d4da31).
+[2025-01-12 20:38:16] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:39:22] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 293, in show_week
+    start_of_week = datetime.fromisocalendar(datetime.now().year, week, 1)
+TypeError: 'NoneType' object cannot be interpreted as an integer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: 'NoneType' object cannot be interpreted as an integer
+[2025-01-12 20:39:28] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 318, in show_week
+    date=datetime_to_words(start_of_week),
+TypeError: datetime_to_words() missing 2 required positional arguments: 'locale' and 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: datetime_to_words() missing 2 required positional arguments: 'locale' and 'date'
+[2025-01-12 20:41:01] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:41:02] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ebec7ad6c299d53971577932b715c6b1).
+[2025-01-12 20:41:04] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:41:31] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:41:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 2f4469c728bd9dcf3dc67586808b3e43).
+[2025-01-12 20:41:35] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:48:28] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:48:30] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6704c024b2019ab44f4202be11f0fb43).
+[2025-01-12 20:48:32] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 20:53:49] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:54:29] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:55:53] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:56:45] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:57:47] [INFO    ] discord.client: logging in using static token
+[2025-01-12 20:57:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5fbcb6f5ce6c7d07ca1b35bea37ba37a).
+[2025-01-12 20:57:51] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:00:09] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:00:11] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d9caf18a28feab5abae5446ebaec72c4).
+[2025-01-12 21:00:13] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:02:40] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:02:41] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5e371b10b967cbf0224adbead63d90c4).
+[2025-01-12 21:02:44] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:08:00] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:08:01] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 0c74a62917d45926ed7b559ecd0c70b2).
+[2025-01-12 21:08:03] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:08:52] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:08:54] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: cbac2f3d05780e6e8139b8108001d21d).
+[2025-01-12 21:08:56] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:10:27] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:10:29] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6598ba7535247783661b1cd4d6984cd6).
+[2025-01-12 21:10:31] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:14:30] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:14:31] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b5c039075f3fba33fcddb0d6015160df).
+[2025-01-12 21:14:33] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:14:38] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 339, in show_week
+    await interaction.response.send_message(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 151, in request
+    to_send = utils._to_json(payload)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\utils.py", line 650, in _to_json
+    return json.dumps(obj, separators=(',', ':'), ensure_ascii=True)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type locale_str is not JSON serializable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: Object of type locale_str is not JSON serializable
+[2025-01-12 21:15:30] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:15:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ef9386071faece81ae0e370b88a6aae2).
+[2025-01-12 21:15:34] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:21:38] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:21:40] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c73932cdad4aaaa8d5424cc0320ad33a).
+[2025-01-12 21:21:42] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:24:50] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:24:51] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 4b1cbce82d589148548a7e4f5c2da8b5).
+[2025-01-12 21:24:53] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:27:38] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:27:39] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 4d6b378bdc7650f336732aaf61726037).
+[2025-01-12 21:27:41] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:32:15] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:32:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 232f68bbf593ffd43594ebba5090175c).
+[2025-01-12 21:32:18] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 21:34:46] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 346, in show_week
+AttributeError: can't set attribute 'fields'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: AttributeError: can't set attribute 'fields'
+[2025-01-12 21:35:47] [INFO    ] discord.client: logging in using static token
+[2025-01-12 21:35:49] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3995fd99e1a059348c924b9fc2ca4f12).
+[2025-01-12 21:35:51] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-12 22:04:38] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 3995fd99e1a059348c924b9fc2ca4f12.
+[2025-01-13 14:53:36] [INFO    ] discord.client: logging in using static token
+[2025-01-13 14:55:44] [INFO    ] discord.client: logging in using static token
+[2025-01-13 14:55:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: bf5a1a5d75a071e4c6f72f049512e348).
+[2025-01-13 14:55:48] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 14:58:10] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 300, in show_week
+    raise InvalidDateError(
+extensions.calendar.InvalidDateError: calendar_show_week_failure_bothdateandweek
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 323, in show_week
+    description=InvalidDateError.args[0],
+TypeError: 'getset_descriptor' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: 'getset_descriptor' object is not subscriptable
+[2025-01-13 15:02:57] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:02:58] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 158a5331fa7a4cbd92ef1aa486e0f16c).
+[2025-01-13 15:03:00] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 15:03:07] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 303, in show_week
+    raise InvalidDateError(
+extensions.calendar.InvalidDateError: calendar_show_week_failure_bothdateandweek
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 326, in show_week
+    description=InvalidDateError.message,
+AttributeError: type object 'InvalidDateError' has no attribute 'message'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: AttributeError: type object 'InvalidDateError' has no attribute 'message'
+[2025-01-13 15:04:15] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:04:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 45d6956a7431d2a7f1c068093013d2e5).
+[2025-01-13 15:04:18] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 15:04:48] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 330, in show_week
+    start_of_week = datetime.fromisocalendar(datetime.now().year, week, 1)
+ValueError: Invalid week: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: ValueError: Invalid week: 0
+[2025-01-13 15:05:44] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:05:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 1dff5bda3cd053a95e0fb6cc16549f34).
+[2025-01-13 15:05:47] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 15:05:49] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 329, in show_week
+    end_of_week = start_of_week + timedelta(days=7)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+[2025-01-13 15:07:04] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:07:05] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f2f4fb7bf638e66c8913d06c71f5fbf3).
+[2025-01-13 15:07:07] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 15:07:12] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 332, in show_week
+    end_of_week = start_of_week + timedelta(days=7)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+[2025-01-13 15:07:46] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 332, in show_week
+    end_of_week = start_of_week + timedelta(days=7)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+[2025-01-13 15:09:20] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:09:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 0d2b23fb6e5863822644c234bedd7b8e).
+[2025-01-13 15:09:24] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 15:09:27] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 332, in show_week
+    end_of_week = start_of_week + timedelta(days=7)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+[2025-01-13 15:09:51] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 332, in show_week
+    end_of_week = start_of_week + timedelta(days=7)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+[2025-01-13 15:10:02] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:10:04] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e3ec76fd6adebc6778c849f632518fc7).
+[2025-01-13 15:10:06] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 15:10:10] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 333, in show_week
+    end_of_week = start_of_week + timedelta(days=7)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: TypeError: unsupported operand type(s) for +: 'NoneType' and 'datetime.timedelta'
+[2025-01-13 15:10:39] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:10:41] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: bcf6070cc862365bb69d4b275847a3b9).
+[2025-01-13 15:10:43] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 15:11:06] [INFO    ] discord.client: logging in using static token
+[2025-01-13 15:11:40] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b2bf4eb45a91e5278c1e0490e073f8d2).
+[2025-01-13 15:11:42] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 16:33:03] [INFO    ] discord.client: logging in using static token
+[2025-01-13 16:33:51] [INFO    ] discord.client: logging in using static token
+[2025-01-13 16:34:00] [INFO    ] discord.client: logging in using static token
+[2025-01-13 16:37:11] [INFO    ] discord.client: logging in using static token
+[2025-01-13 16:37:12] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 80a50dcd1525a1430cfb9d7e48029d5e).
+[2025-01-13 16:37:14] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 16:41:30] [INFO    ] discord.client: logging in using static token
+[2025-01-13 16:41:31] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: a0ad27db742b65f6bc90981b00c003f4).
+[2025-01-13 16:41:33] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 16:41:58] [INFO    ] discord.client: logging in using static token
+[2025-01-13 16:42:31] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: fc3d7ff7d2c26184c51777d1fd7bd89f).
+[2025-01-13 16:42:33] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:00:22] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:00:23] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9350db5e78f5975569c208f4517ae643).
+[2025-01-13 17:00:25] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:00:45] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 284, in remove
+    ExtView.new_button(
+TypeError: ExtView.new_button() missing 1 required positional argument: 'self'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: TypeError: ExtView.new_button() missing 1 required positional argument: 'self'
+[2025-01-13 17:01:37] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:01:39] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 1cadbbe82c2bda503cf9985cd46b8845).
+[2025-01-13 17:01:41] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:02:17] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:02:19] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6abef88ab559ea6b7009174f72725412).
+[2025-01-13 17:02:21] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:03:28] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:03:30] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 44b70c89bfea41ede41e48e99b83ff1b).
+[2025-01-13 17:03:32] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:03:37] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 252, in remove
+    embed = self.embedGenerator.embed(
+  File "E:\DiscordBot\Witelonek\utils\discord_extension.py", line 65, in embed
+    _name = self.translator.translate_sync(field.name)
+AttributeError: 'coroutine' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: AttributeError: 'coroutine' object has no attribute 'name'
+[2025-01-13 17:04:05] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:04:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 44db1c987237067833bd6f4ba7c404ed).
+[2025-01-13 17:04:09] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:04:14] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 252, in remove
+    embed = self.embedGenerator.embed(
+  File "E:\DiscordBot\Witelonek\utils\discord_extension.py", line 65, in embed
+    _name = self.translator.translate_sync(field.name)
+AttributeError: 'NoneType' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: AttributeError: 'NoneType' object has no attribute 'name'
+[2025-01-13 17:08:28] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:08:29] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5c736f9bff5f706d92ab3420198d9478).
+[2025-01-13 17:08:31] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:08:44] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=2> for item <ExtButton style=<ButtonStyle.danger: 4> url=None disabled=False label='calendar_remove_cancel' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 241, in cancel_remove
+    await interaction.message.delete()
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 859, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 741, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+[2025-01-13 17:10:37] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=2> for item <ExtButton style=<ButtonStyle.success: 3> url=None disabled=False label='calendar_remove_approve' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 174, in remove_event
+    await interaction.message.delete()
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\message.py", line 859, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\http.py", line 741, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+[2025-01-13 17:11:06] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:11:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: f8e28ca1235da334056b24d4cacddc20).
+[2025-01-13 17:11:09] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:14:32] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:14:33] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3343e4303a7b7a7cb2971b248a9d45d7).
+[2025-01-13 17:14:35] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:15:17] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=2> for item <ExtButton style=<ButtonStyle.danger: 4> url=None disabled=False label='calendar_remove_cancel' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 242, in cancel_remove
+    await interaction.delete_original_response()
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 524, in delete_original_response
+    await adapter.delete_original_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+[2025-01-13 17:24:31] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:24:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c47a3487f17d9c4e07e9322bada4c090).
+[2025-01-13 17:24:34] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:32:34] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:32:35] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e71756f43355a86708d9bbd474be44df).
+[2025-01-13 17:32:37] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:34:37] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:35:42] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:35:44] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 47bfd5192ab74663e6b8714b4390064c).
+[2025-01-13 17:35:46] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:36:31] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:36:32] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 01e612a238ca691b2fcd4b942e7c6fac).
+[2025-01-13 17:36:34] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:43:07] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:43:08] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 2aabad02c606c2c65dc0e9fddc55cfef).
+[2025-01-13 17:43:10] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:43:29] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:44:08] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 21019ba57c8447af21fcfdc43d731fbd).
+[2025-01-13 17:44:10] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:48:23] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:48:25] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e84c21a4973d36cb416fa7c6bd25e285).
+[2025-01-13 17:48:27] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:51:21] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:51:22] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b82fa40ebde44d9a9e6d0b39ed782420).
+[2025-01-13 17:51:24] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 17:53:10] [INFO    ] discord.client: logging in using static token
+[2025-01-13 17:53:11] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 2a3350866d59b1b40292183bee8bcd8b).
+[2025-01-13 17:53:13] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 18:05:16] [INFO    ] discord.client: logging in using static token
+[2025-01-13 18:05:17] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ba56bd6b920d51cb3c9f65cd1a2db631).
+[2025-01-13 18:05:19] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 18:09:46] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=2> for item <ExtButton style=<ButtonStyle.danger: 4> url=None disabled=False label='calendar_remove_cancel' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 242, in cancel_remove
+    await interaction.delete_original_response()
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 524, in delete_original_response
+    await adapter.delete_original_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+[2025-01-13 18:15:35] [INFO    ] discord.client: logging in using static token
+[2025-01-13 18:15:36] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3b29b3be93d074ca58f30ef00af2f04e).
+[2025-01-13 18:15:38] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 18:16:17] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=2> for item <ExtButton style=<ButtonStyle.danger: 4> url=None disabled=False label='calendar_remove_cancel' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 243, in cancel_remove
+    await interaction.edit_original_response(content="")
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 487, in edit_original_response
+    data = await adapter.edit_original_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+[2025-01-13 18:19:07] [INFO    ] discord.client: logging in using static token
+[2025-01-13 18:19:08] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 06617ff4fddcbadd58c9af0e088e18eb).
+[2025-01-13 18:19:10] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 18:19:25] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=2> for item <ExtButton style=<ButtonStyle.danger: 4> url=None disabled=False label='calendar_remove_cancel' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 243, in cancel_remove
+    await interaction.edit_original_response(content="Anulowano")
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 487, in edit_original_response
+    data = await adapter.edit_original_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+[2025-01-13 18:59:49] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:00:14] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:00:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ef888049f44b15437bab42564712a715).
+[2025-01-13 19:00:18] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:00:41] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 476, in show_week
+    name=locale_str("calendar_show_week"),
+extensions.calendar.InvalidDateError: calendar_show_week_failure_neitherdatenorweek
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 500, in show_week
+    raise InvalidDateError(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2025-01-13 19:01:27] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:01:28] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 100660528f9890081aff702a1fea7dc4).
+[2025-01-13 19:01:30] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:01:36] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_show_week'
+Traceback (most recent call last):
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 476, in show_week
+    name=locale_str("calendar_show_week"),
+extensions.calendar.InvalidDateError: calendar_show_week_failure_neitherdatenorweek
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 500, in show_week
+    raise InvalidDateError(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 801, in send_message
+    await adapter.create_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_show_week' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2025-01-13 19:01:59] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 309, in remove
+    else f" <t:{int(datetime.timestamp(datetime.combine(event.date, time(hour=12))))}:D>\n"
+OSError: [Errno 22] Invalid argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: OSError: [Errno 22] Invalid argument
+[2025-01-13 19:01:59] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 290, in remove
+OSError: [Errno 22] Invalid argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: OSError: [Errno 22] Invalid argument
+[2025-01-13 19:04:25] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:04:27] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: ccd84f5b9a050f8584566c60a2faaf07).
+[2025-01-13 19:04:29] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:04:38] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 290, in remove
+OSError: [Errno 22] Invalid argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: OSError: [Errno 22] Invalid argument
+[2025-01-13 19:04:38] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 309, in remove
+    else f" <t:{int(datetime.timestamp(datetime.combine(event.date, time(hour=12))))}:D>\n"
+OSError: [Errno 22] Invalid argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: OSError: [Errno 22] Invalid argument
+[2025-01-13 19:05:52] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:05:54] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c3d9b5d91cbcb32456b69234f4aeaf37).
+[2025-01-13 19:05:56] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:06:02] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 309, in remove
+    else f" <t:{int(datetime.timestamp(datetime.combine(event.date, time(hour=12))))}:D>\n"
+OSError: [Errno 22] Invalid argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: OSError: [Errno 22] Invalid argument
+[2025-01-13 19:08:08] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:08:10] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 4d119834948c6038c0c61b5aa533dc21).
+[2025-01-13 19:08:12] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:08:15] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'calendar_remove'
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 827, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 310, in remove
+    else f" <t:{int(datetime.timestamp(datetime.combine(event.date, time(hour=12))))}:D>\n"
+OSError: [Errno 22] Invalid argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'calendar_remove' raised an exception: OSError: [Errno 22] Invalid argument
+[2025-01-13 19:12:28] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:12:30] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d529291ba228d2ad376f5f4ee4aa1378).
+[2025-01-13 19:12:32] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:13:44] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:13:45] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7c10209ba329c11e9c94bfd4bd073895).
+[2025-01-13 19:13:47] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:14:18] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:14:19] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 1e453fa410e8fce2f86eacec32715d04).
+[2025-01-13 19:14:21] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:14:28] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=3> for item <ExtButton style=<ButtonStyle.primary: 1> url=None disabled=False label='3. 123' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 185, in remove_event
+    await interaction.delete_original_message()
+AttributeError: 'Interaction' object has no attribute 'delete_original_message'
+[2025-01-13 19:14:51] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:14:52] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: d5c803f8643db592126be903dabb20e1).
+[2025-01-13 19:14:54] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:15:12] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=3> for item <ExtButton style=<ButtonStyle.primary: 1> url=None disabled=False label='3. 123' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 185, in remove_event
+    await interaction.delete_original_response()
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\interactions.py", line 524, in delete_original_response
+    await adapter.delete_original_interaction_response(
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10015): Unknown Webhook
+[2025-01-13 19:15:59] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:16:00] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 34049a3e642cf64ba879b6a5322e193c).
+[2025-01-13 19:16:02] [INFO    ] discord: ========== bot is ready ==========
+[2025-01-13 19:17:31] [ERROR   ] discord.ui.view: Ignoring exception in view <ExtView timeout=180 children=2> for item <ExtButton style=<ButtonStyle.danger: 4> url=None disabled=False label='calendar_remove_cancel' emoji=None row=None>
+Traceback (most recent call last):
+  File "C:\Users\Przemek\AppData\Local\Programs\Python\Python310\lib\site-packages\discord\ui\view.py", line 427, in _scheduled_task
+    await item.callback(interaction)
+  File "E:\DiscordBot\Witelonek\extensions\calendar.py", line 264, in cancel_remove
+    await interaction.delete_original_message()
+AttributeError: 'Interaction' object has no attribute 'delete_original_message'
+[2025-01-13 19:19:08] [INFO    ] discord.client: logging in using static token
+[2025-01-13 19:19:09] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 19102b11669b83b80e698f3129a576c4).
+[2025-01-13 19:19:11] [INFO    ] discord: ========== bot is ready ==========

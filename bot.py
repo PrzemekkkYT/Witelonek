@@ -11,6 +11,7 @@ from discord.ext import commands, tasks
 
 # local import
 from utils.utils import JSONTranslator
+from orms.calendar import Event
 
 ### wymagane permisje ###
 # - wysyłanie wiadomości
@@ -28,6 +29,7 @@ bot_config = json.load(open("./config.json", "r+"))
 
 MY_GUILD = discord.Object(id=bot_config["test_guild"])
 # MY_GUILD = discord.Object(id=891009215102074950)
+WITELON_DISCORD = discord.Object(id=1294922610957746216)
 
 
 class MyClient(commands.Bot):
@@ -36,7 +38,7 @@ class MyClient(commands.Bot):
             command_prefix="w!",
             intents=intents,
             status=discord.Status.idle,
-            # activity=discord.CustomActivity(name=""),
+            activity=discord.CustomActivity(name=bot_config["statuses"][0]),
         )
 
     async def setup_hook(self):
@@ -47,11 +49,13 @@ class MyClient(commands.Bot):
                 await self.load_extension(f"extensions.{filename[:-3]}")
 
         self.tree.copy_global_to(guild=MY_GUILD)
+        self.tree.copy_global_to(guild=WITELON_DISCORD)
         await self.tree.sync()
 
     async def on_ready(self):
         # change_status.start()
         # print("ready")
+        Event.create_table()
         logger.info("========== bot is ready ==========")
 
 
