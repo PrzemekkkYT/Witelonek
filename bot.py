@@ -44,7 +44,7 @@ class MyClient(commands.Bot):
             command_prefix="w!",
             intents=intents,
             status=discord.Status.idle,
-            activity=discord.CustomActivity(name=bot_config["statuses"][0]),
+            activity=discord.CustomActivity(name=random.choice(bot_config["statuses"])),
         )
 
     async def setup_hook(self):
