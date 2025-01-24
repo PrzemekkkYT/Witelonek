@@ -54,7 +54,7 @@ class MyClient(commands.Bot):
             if filename.endswith(".py"):
                 await self.load_extension(f"extensions.{filename[:-3]}")
 
-        # self.tree.copy_global_to(guild=WITELON_DISCORD)
+        self.tree.copy_global_to(guild=WITELON_DISCORD)
         self.tree.copy_global_to(guild=MY_GUILD)
         await self.tree.sync()
 

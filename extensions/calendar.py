@@ -992,9 +992,11 @@ class Calendar(commands.Cog):
     )
     @app_commands.rename(
         include_old=locale_str("calendar_show_all_includeold"),
+        show_id=locale_str("calendar_show_all_showid"),
     )
     @app_commands.describe(
         include_old=locale_str("calendar_show_all_includeold_description"),
+        show_id=locale_str("calendar_show_all_showid_description"),
     )
     async def show_all(
         self,
@@ -1151,16 +1153,16 @@ class EventField(ExtEmbedGenerator.Field):
             else f" <t:{int(datetime.timestamp(datetime.combine(event.date, dttime(hour=12))))}:D>\n"
         )
         self.field_desc += (
-            "   📄 "
+            "> 📄 "
             + await self.translator.translate(
                 locale_str(f"calendar_type_{event.event_type}"),
                 self.locale,
             )
             + "\n"
         )
-        self.field_desc += "   💬 " + event.message + "\n" if event.message else ""
+        self.field_desc += "> 💬 " + event.message + "\n" if event.message else ""
         self.field_desc += (
-            "   👥 "
+            "> 👥 "
             + await self.translator.translate(
                 locale_str(
                     "calendar_show_week_weekday_appliesto", role_id=str(event.role_id)
@@ -1169,9 +1171,9 @@ class EventField(ExtEmbedGenerator.Field):
             )
             + "\n"
             if event.role_id
-            else " "
+            else ""
         )
-        self.field_desc += "   📍 " + event.location + "\n" if event.location else ""
+        self.field_desc += "> 📍 " + event.location + "\n" if event.location else ""
 
         super().__init__(name=self.field_title, value=self.field_desc, inline=False)
 
@@ -1205,9 +1207,9 @@ class DayField(ExtEmbedGenerator.Field):
         self.value = "\n".join(
             [
                 (
-                    f"•`#{event.id}` - {event.title} o <t:{int(datetime.timestamp(datetime.combine(event.date, event.time)))}:t>"
+                    f"•`#{event.id}`  {event.title} o <t:{int(datetime.timestamp(datetime.combine(event.date, event.time)))}:t>"
                     if event.time
-                    else f"•`#{event.id}` - {event.title}"
+                    else f"•`#{event.id}`  {event.title}"
                 )
                 for event in events
             ]

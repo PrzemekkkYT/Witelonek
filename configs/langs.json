@@ -106,6 +106,8 @@
         "calendar_show_all_description": "Pokazuje wszystkie przyszłe wydarzenia z kalendarza",
         "calendar_show_all_includeold": "przeszle",
         "calendar_show_all_includeold_description": "Pokazuje wszystkie wydarzenia z kalendarza",
+        "calendar_show_all_showid": "pokazuj_id",
+        "calendar_show_all_showid_description": "Czy pokazywać ID wydarzenia",
         "calendar_show_all_title": "Wszystkie przyszłe wydarzenia",
         "calendar_show_all+old_title": "Wszystkie wydarzenia (w tym przeszłe)",
         "calendar_show_all_more": "W późniejszych datach jest jeszcze {more} wydarzeń",
