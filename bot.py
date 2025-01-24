@@ -62,7 +62,7 @@ class MyClient(commands.Bot):
         for guild in self.guilds:
             if GuildConfigs.get_or_none(GuildConfigs.guild_id == guild.id) is None:
                 GuildConfigs.create(guild_id=guild.id)
-        # change_status.start()
+        change_status.start()
         # print("ready")
         logger.info("========== bot is ready ==========")
 

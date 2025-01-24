@@ -45,10 +45,6 @@ class Calendar(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        # schedule.every(1).minutes.do(self.send_show_week)
-        # schedule.every().sunday.at("12:00").do(send_show_week)
-        # self.check_events.start()
-
         scheduler = AsyncIOScheduler()
         scheduler.add_job(self.send_show_week, CronTrigger(day_of_week=6, hour=12))
         # scheduler.add_job(self.send_show_week, IntervalTrigger(seconds=5))
@@ -1001,7 +997,10 @@ class Calendar(commands.Cog):
         include_old=locale_str("calendar_show_all_includeold_description"),
     )
     async def show_all(
-        self, interaction: discord.Interaction, include_old: Optional[bool] = False
+        self,
+        interaction: discord.Interaction,
+        include_old: Optional[bool] = False,
+        show_id: Optional[bool] = False,
     ):
         events = (
             Event.select()
@@ -1014,7 +1013,9 @@ class Calendar(commands.Cog):
         weekDays = []
 
         for event in events.group_by(Event.date):
-            weekDay = DayField(self.client.tree.translator, discord.Locale.polish)
+            weekDay = DayField(
+                self.client.tree.translator, discord.Locale.polish, show_id
+            )
             await weekDay._init(
                 event.date, events.where(Event.date == event.date), True
             )
@@ -1142,7 +1143,7 @@ class EventField(ExtEmbedGenerator.Field):
         self.locale = locale
 
     async def _init(self, event: Event):
-        self.field_title = f"◻️||{event.id}||  {event.title}"
+        self.field_title = f"◻️{event.title}"
         self.field_desc = ""
         self.field_desc += (
             f" <t:{int(datetime.timestamp(datetime.combine(event.date, event.time)))}:f>\n"
@@ -1180,9 +1181,11 @@ class DayField(ExtEmbedGenerator.Field):
         self,
         translator: JSONTranslator,
         locale: discord.Locale,
+        show_id: Optional[bool] = False,
     ):
         self.translator = translator
         self.locale = locale
+        self.show_id = show_id
 
     async def _init(
         self, date: datetime, events: list[Event], inline: Optional[bool] = False
@@ -1202,9 +1205,18 @@ class DayField(ExtEmbedGenerator.Field):
         self.value = "\n".join(
             [
                 (
-                    f"•||{event.id}|| {event.title} o <t:{int(datetime.timestamp(datetime.combine(event.date, event.time)))}:t>"
+                    f"•`#{event.id}` - {event.title} o <t:{int(datetime.timestamp(datetime.combine(event.date, event.time)))}:t>"
                     if event.time
-                    else f"•||{event.id}|| {event.title}"
+                    else f"•`#{event.id}` - {event.title}"
+                )
+                for event in events
+            ]
+            if self.show_id
+            else [
+                (
+                    f"• {event.title} o <t:{int(datetime.timestamp(datetime.combine(event.date, event.time)))}:t>"
+                    if event.time
+                    else f"• {event.title}"
                 )
                 for event in events
             ]
