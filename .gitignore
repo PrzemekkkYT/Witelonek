@@ -3,6 +3,8 @@ __pycache__/
 
 config.json
 
+todo.md
+
 *.db
 *.log
 

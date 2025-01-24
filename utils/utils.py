@@ -3,6 +3,7 @@ import json
 from typing import Optional, Any
 import logging
 from colored import fg, attr
+from os import path
 
 # discord import
 import discord
@@ -15,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 class JSONTranslator(Translator):
     def __init__(self):
-        self.translations_path = "./langs.json"
+        self.translations_path = path.join("configs", "langs.json")
         self.translations = None
 
     async def load(self) -> None:
@@ -134,3 +135,9 @@ def catch_err(func, *args, handle=lambda e: e, **kwargs):
         return func(*args, **kwargs)
     except Exception as e:
         return handle(e)
+
+
+async def datetime_to_words(
+    translator: JSONTranslator, locale: discord.Locale, date: datetime
+) -> str:
+    return f"{date.day} {await translator.translate(string=locale_str(f'month_{date.month}'), locale=locale)} {date.year}"

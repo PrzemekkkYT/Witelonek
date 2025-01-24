@@ -10,7 +10,7 @@ class Tests(commands.Cog):
         self.client: commands.Bot = client
 
     @app_commands.command(name="test")
-    async def config(self, interaction: discord.Interaction):
+    async def test(self, interaction: discord.Interaction):
         await interaction.response.send_message(
             content="test",
             ephemeral=True,

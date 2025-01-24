@@ -12,6 +12,7 @@ from discord.ext import commands, tasks
 # local import
 from utils.utils import JSONTranslator
 from orms.calendar import Event
+from orms.configs import GuildConfigs
 
 ### wymagane permisje ###
 # - wysyłanie wiadomości
@@ -25,11 +26,16 @@ from orms.calendar import Event
 logger = logging.getLogger("discord")
 handler = logging.FileHandler(filename="logs/bot.log", encoding="utf-8", mode="a+")
 
-bot_config = json.load(open("./config.json", "r+"))
+bot_config = json.load(open(os.path.join("configs", "config.json"), "r+"))
 
 MY_GUILD = discord.Object(id=bot_config["test_guild"])
 # MY_GUILD = discord.Object(id=891009215102074950)
 WITELON_DISCORD = discord.Object(id=1294922610957746216)
+
+if not Event.table_exists():
+    Event.create_table()
+if not GuildConfigs.table_exists():
+    GuildConfigs.create_table()
 
 
 class MyClient(commands.Bot):
@@ -48,14 +54,16 @@ class MyClient(commands.Bot):
             if filename.endswith(".py"):
                 await self.load_extension(f"extensions.{filename[:-3]}")
 
+        # self.tree.copy_global_to(guild=WITELON_DISCORD)
         self.tree.copy_global_to(guild=MY_GUILD)
-        self.tree.copy_global_to(guild=WITELON_DISCORD)
         await self.tree.sync()
 
     async def on_ready(self):
+        for guild in self.guilds:
+            if GuildConfigs.get_or_none(GuildConfigs.guild_id == guild.id) is None:
+                GuildConfigs.create(guild_id=guild.id)
         # change_status.start()
         # print("ready")
-        Event.create_table()
         logger.info("========== bot is ready ==========")
 
 

@@ -1,3 +1,5 @@
 colored==1.4.4
 discord.py==2.3.2
 peewee==3.15.4
+typing_extensions
+apscheduler
