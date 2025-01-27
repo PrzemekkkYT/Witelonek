@@ -38,13 +38,15 @@ if not GuildConfigs.table_exists():
     GuildConfigs.create_table()
 
 
+last_status = None
+
+
 class MyClient(commands.Bot):
     def __init__(self, *, intents: discord.Intents):
         super().__init__(
             command_prefix="w!",
             intents=intents,
-            status=discord.Status.idle,
-            activity=discord.CustomActivity(name=random.choice(bot_config["statuses"])),
+            status=discord.Status.online,
         )
 
     async def setup_hook(self):
@@ -70,10 +72,15 @@ class MyClient(commands.Bot):
 
 @tasks.loop(time=datetime.time(hour=0, minute=0, tzinfo=datetime.timezone.utc))
 async def change_status():
+    global last_status
+    selected_status = random.choice(
+        list(set(bot_config["statuses"]) - set(last_status or []))
+    )
     await client.change_presence(
         status=discord.Status.idle,
-        activity=discord.CustomActivity(name=random.choice(bot_config["statuses"])),
+        activity=discord.CustomActivity(name=selected_status),
     )
+    last_status = selected_status
 
 
 intents = discord.Intents.all()
