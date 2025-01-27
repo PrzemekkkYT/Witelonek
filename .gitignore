@@ -6,6 +6,6 @@ config.json
 todo.md
 
 *.db
-*.log
+logs/
 
 *.code-workspace
