@@ -44,10 +44,11 @@ last_status = None
 class MyClient(commands.Bot):
     def __init__(self, *, intents: discord.Intents):
         super().__init__(
-            command_prefix="w!",
+            command_prefix=bot_config["prefix"],
             intents=intents,
             status=discord.Status.online,
         )
+        self.bot_config = bot_config
 
     async def setup_hook(self):
         await self.tree.set_translator(translator=JSONTranslator())
