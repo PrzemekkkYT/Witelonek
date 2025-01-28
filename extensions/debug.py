@@ -66,9 +66,12 @@ class Debug(commands.Cog):
         await self.send_priv(ctx, msg)
 
     @commands.command()
-    async def status(self, ctx: commands.Context, status: str):
-        await self.client.change_presence(activity=discord.CustomActivity(name=status))
-        await self.send_priv(ctx, f"Changed status to {status}")
+    async def status(self, ctx: commands.Context, *status):
+        new_status = " ".join(status)
+        await self.client.change_presence(
+            activity=discord.CustomActivity(name=new_status)
+        )
+        await self.send_priv(ctx, f"Changed status to {new_status}")
 
     @commands.command()
     async def delete_message(self, ctx: commands.Context, id: int):

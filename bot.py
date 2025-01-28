@@ -47,6 +47,7 @@ class MyClient(commands.Bot):
             command_prefix=bot_config["prefix"],
             intents=intents,
             status=discord.Status.online,
+            help_command=None,
         )
         self.bot_config = bot_config
 
