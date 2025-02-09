@@ -772,6 +772,12 @@ class Calendar(commands.Cog):
     ):
         date = date.replace("-", ".").replace("/", ".")
         try:
+            if date in ["dzisiaj", "today"]:
+                date = datetime.now().strftime("%d.%m.%Y")
+            elif date in ["jutro", "tomorrow"]:
+                date = (datetime.now() + timedelta(days=1)).strftime("%d.%m.%Y")
+            elif date in ["pojutrze", "dayaftertomorrow"]:
+                date = (datetime.now() + timedelta(days=2)).strftime("%d.%m.%Y")
             formatted_date = datetime.strptime(date, "%d.%m.%Y")
             events = []
 

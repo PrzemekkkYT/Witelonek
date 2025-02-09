@@ -79,7 +79,7 @@ async def change_status():
         list(set(bot_config["statuses"]) - set(last_status or []))
     )
     await client.change_presence(
-        status=discord.Status.idle,
+        status=discord.Status.online,
         activity=discord.CustomActivity(name=selected_status),
     )
     last_status = selected_status
